@@ -1,0 +1,9 @@
+output: main.o print.o add_beg.o
+	cc main.c print.c add_beg.c -o output
+main.o: main.c
+	cc -c main.c
+print.o: print.c
+	cc -c print.c
+add_beg.o:add_beg.c
+	cc -c add_beg.c
+
